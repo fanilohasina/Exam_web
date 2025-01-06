@@ -36,9 +36,10 @@ class CadeauController
     
         foreach($typesModel as $type) {
             $nbr = 0;
-            if(!empty($a = $_POST[$type->type_nom]) && !is_numeric($a) && $a > 0)
+            if(!empty($a = ($_GET[$type->type_nom] ?? false)) && is_numeric($a) && $a > 0){
                 $nbr = $a;
-            $nombres[$type] = $nbr; 
+            }
+            $nombres[$type->type_id] = $nbr; 
         }
     
         $cadeaux = [];
@@ -50,7 +51,8 @@ class CadeauController
                 'name' => $cadeau->cadeau_name,
                 'description' => $cadeau->cadeau_description,
                 'image' => $cadeau->cadeau_image,
-                'prix' => $cadeau->cadeau_prix
+                'prix' => $cadeau->cadeau_prix,
+                'type' => $cadeau->cadeau_type
             ];
         }
 

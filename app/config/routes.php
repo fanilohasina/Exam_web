@@ -44,3 +44,4 @@ $router->post('/recharge', [$transactionController, 'dorecharge'])->addMiddlewar
 // Cadeau here
 $cadeauController = new CadeauController($app);
 $router->get('/cadeau', [$cadeauController, 'cadeau'])->addMiddleware([$authMiddleware, 'user']);
+$router->get('/docadeau', [$cadeauController, 'docadeau'])->addMiddleware([$authMiddleware, 'user']);

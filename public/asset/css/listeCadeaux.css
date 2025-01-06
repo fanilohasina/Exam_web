@@ -20,15 +20,9 @@ section > div {
   height: 80vh;
 }
 
-.divGarcons {
+.divType {
   background-color: #f5deb3af;
   height: 100%;
-  position: relative;
-  border: 5px solid wheat;
-}
-.divFilles {
-  height: 100%;
-  background-color: #f5deb3af;
   position: relative;
   border: 5px solid wheat;
 }
