@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/listeCadeaux.css">
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <a href="/" class="retour btn btn-default">Cancel</a>
+    <div class="backGround">
+        <img src="asset/image/back.jpg" alt="">
+    </div>
+    <h1 class="bigTitle">Liste des cadeaux genere</h1>
+    <section>
+        <div class="col-md-6">
+            <div class="divGarcons">
+                <h1 class="titleDiv">
+                    Pour les garcons : 10
+                    <button class="btn btn-primary">Suivant</button>
+                </h1>
+                <div class="listCadeau">
+                    <div class="itemCadeau">
+                        <img src="asset/image/cadeau.jpg" alt="">
+                        <div class="descriptCadeau">
+                            <div>
+                                <h1>Nom du cadeau</h1>
+                                <p>9.99 $</p>
+                            </div>
+                            <div>
+                                <button class="btn btn-success">Valider</button>
+                                <button class="btn btn-default">Changer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itemCadeau">
+                        <img src="asset/image/cadeau.jpg" alt="">
+                        <div class="descriptCadeau">
+                            <div>
+                                <h1>Nom du cadeau</h1>
+                                <p>9.99 $</p>
+                            </div>
+                            <div>
+                                <button class="btn btn-success">Valider</button>
+                                <button class="btn btn-default">Changer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itemCadeau">
+                        <img src="asset/image/cadeau.jpg" alt="">
+                        <div class="descriptCadeau">
+                            <div>
+                                <h1>Nom du cadeau</h1>
+                                <p>9.99 $</p>
+                            </div>
+                            <div>
+                                <button class="btn btn-success">Valider</button>
+                                <button class="btn btn-default">Changer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itemCadeau">
+                        <img src="asset/image/cadeau.jpg" alt="">
+                        <div class="descriptCadeau">
+                            <div>
+                                <h1>Nom du cadeau</h1>
+                                <p>9.99 $</p>
+                            </div>
+                            <div>
+                                <button class="btn btn-success">Valider</button>
+                                <button class="btn btn-default">Changer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itemCadeau">
+                        <img src="asset/image/cadeau.jpg" alt="">
+                        <div class="descriptCadeau">
+                            <div>
+                                <h1>Nom du cadeau</h1>
+                                <p>9.99 $</p>
+                            </div>
+                            <div>
+                                <button class="btn btn-success">Valider</button>
+                                <button class="btn btn-default">Changer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-md-offset-6">
+            <div class="divFilles">
+                <h1 class="titleDiv">Pour les filles : 12 <button class="btn btn-primary">Suivant</button></h1>
+                <div class="listCadeau">
+                    <div class="itemCadeau">
+                        <img src="asset/image/cadeau.jpg" alt="">
+                        <div class="descriptCadeau">
+                            <div>
+                                <h1>Nom du cadeau</h1>
+                                <p>9.99 $</p>
+                            </div>
+                            <div>
+                                <button class="btn btn-success">Valider</button>
+                                <button class="btn btn-default">Changer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itemCadeau">
+                        <img src="asset/image/cadeau.jpg" alt="">
+                        <div class="descriptCadeau">
+                            <div>
+                                <h1>Nom du cadeau</h1>
+                                <p>9.99 $</p>
+                            </div>
+                            <div>
+                                <button class="btn btn-success">Valider</button>
+                                <button class="btn btn-default">Changer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itemCadeau">
+                        <img src="asset/image/cadeau.jpg" alt="">
+                        <div class="descriptCadeau">
+                            <div>
+                                <h1>Nom du cadeau</h1>
+                                <p>9.99 $</p>
+                            </div>
+                            <div>
+                                <button class="btn btn-success">Valider</button>
+                                <button class="btn btn-default">Changer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itemCadeau">
+                        <img src="asset/image/cadeau.jpg" alt="">
+                        <div class="descriptCadeau">
+                            <div>
+                                <h1>Nom du cadeau</h1>
+                                <p>9.99 $</p>
+                            </div>
+                            <div>
+                                <button class="btn btn-success">Valider</button>
+                                <button class="btn btn-default">Changer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itemCadeau">
+                        <img src="asset/image/cadeau.jpg" alt="">
+                        <div class="descriptCadeau">
+                            <div>
+                                <h1>Nom du cadeau</h1>
+                                <p>9.99 $</p>
+                            </div>
+                            <div>
+                                <button class="btn btn-success">Valider</button>
+                                <button class="btn btn-default">Changer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="asset/js/cadeaux.js"></script>
+    <script>
+        const types = <?= json_encode($types) ?>;
+        const cadeaux = <?= json_encode($cadeaux) ?>;
+        const solde = <?= $solde ?>;
+        const count = <?= $nombres ?>;
+
+        
+    </script>
+</body>
+
+</html>

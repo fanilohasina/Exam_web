@@ -1,0 +1,76 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #890000;
+}
+
+.background > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+}
+
+.contentDescript > img {
+  width: 200px;
+  height: 125px;
+  object-fit: cover;
+  justify-self: center;
+}
+
+.contentDescript {
+  display: grid;
+  align-items: center;
+}
+
+.contentDescript > h1 {
+  color: white;
+  font-weight: bold;
+}
+
+.contentDescript > h2 {
+  margin: 0;
+  font-size: 20px;
+  color: black;
+}
+
+.contentDescript > p {
+  color: white;
+  margin-top: 20px;
+}
+
+.containerForm {
+  background-color: white;
+  border-radius: 5px;
+  padding: 40px;
+}
+
+.containerForm > h1 {
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.containerForm > form {
+  display: grid;
+  margin-top: 30px;
+}
+
+.containerForm > form > button {
+  margin-top: 20px;
+}
+
+.containerForm > form > p {
+  text-align: center;
+}

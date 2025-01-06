@@ -1,0 +1,55 @@
+.sort1 {
+  animation: sortir1 1s ease-out 1 !important;
+}
+
+@keyframes sortir1 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.sort2 {
+  animation: sortir2 1s ease-out 1 !important;
+}
+
+@keyframes sortir2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.sort3 {
+  animation: sortir3 1s ease-out 1 !important;
+}
+
+@keyframes sortir3 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.sort4 {
+    animation: sortir4 1s ease-out 1 !important;
+  }
+  
+  @keyframes sortir4 {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }

@@ -1,0 +1,74 @@
+.entre1 {
+  animation: entre1 0.5s ease-out 1;
+}
+
+@keyframes entre1 {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.entre2 {
+  animation: entre2 0.5s ease-out 1;
+}
+
+@keyframes entre2 {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.entre3 {
+  animation: entre3 0.5s ease-out 1;
+}
+
+@keyframes entre3 {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.entre4 {
+  animation: entre4 0.5s ease-out 1;
+}
+
+@keyframes entre4 {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.opacity {
+  opacity: 0;
+}
+.entreProg {
+  animation: entreProg 0.5s ease-out 1;
+}
+
+@keyframes entreProg {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

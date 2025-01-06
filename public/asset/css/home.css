@@ -1,0 +1,124 @@
+header {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.746);
+}
+
+.titleHeader {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 0px 0px;
+  padding: 15px 0px;
+  border-bottom: 1px solid white;
+}
+
+.titleHeader:hover {
+  text-decoration: none;
+}
+
+.titleHeader > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.titleHeader > div > h1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  color: black;
+}
+
+.titleHeader > div > p {
+  font-size: 12px;
+  margin: 0;
+  color: gray;
+}
+
+a.navigationItem > img {
+  width: 30px;
+  height: 30px;
+}
+
+a.navigationItem > p {
+  margin: 0;
+}
+
+a.navigationItem {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 50px;
+  padding: 15px;
+  color: black;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+a.navigationItem:hover {
+  text-decoration: none;
+  opacity: 1;
+  background-color: white;
+  padding-left: 25px;
+}
+
+a.navigationItem.active {
+  text-decoration: none;
+  opacity: 1;
+  background-color: white;
+  padding-left: 25px;
+}
+
+nav {
+  margin: 0px -15px;
+}
+
+section {
+  height: 100vh;
+  position: fixed !important;
+  display: flex;
+  align-items: center;
+}
+
+.containerFormulaire > img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+}
+
+.containerFormulaire > form {
+  display: grid;
+  color: white;
+}
+
+.containerFormulaire > form > button {
+  margin-top: 20px;
+}
+
+.backGround {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.backGround > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.baclLinear {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* background-image: linear-gradient(360deg, #890000, #890000, #890000); */
+  /* background-color: #890000bd; */
+}
