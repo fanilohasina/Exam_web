@@ -11,17 +11,9 @@ class WelcomeController {
 
 	}
 
-
 	public function home() {
-        if(!auth()->loggedin()) {
-            Flight::redirect('login');
-            return;
-        }
         $user = auth()->get();
         piewpiew('home', ['user' => $user]);
     }
 
-    public function list() {
-        piewpiew('listeCadeaux');
-    }
 }

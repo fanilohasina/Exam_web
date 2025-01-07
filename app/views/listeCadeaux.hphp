@@ -16,28 +16,32 @@
 
 <body>
     <a href="/" class="retour btn btn-default">Cancel</a>
+    <button type="button" id="buy-btn" class="btn btn-success"
+        style="position: fixed; top: 1em; right: 1em; z-index: 2001;">Acheter</button>
     <div class="backGround">
         <img src="asset/image/back.jpg" alt="">
     </div>
     <h1 class="bigTitle">Liste des cadeaux genere</h1>
-    <section>
-        <foreach loop="$types as $type">
-            <if condition="($count = $nombres[$type['id']]) <= 0">
-                <?php continue; ?>
-            </if>
-            <div class="col-md-6">
-                <div class="divType">
-                    <h1 class="titleDiv">
-                        <?= $type['nom'] ?> : <?= $count ?>
-                        <button class="btn btn-primary">Suivant</button>
-                    </h1>
-                    <div class="listCadeau" data-cadeau="<?= $type['id'] ?>" data-needed="<?= $count ?>">
+    <div class="container">
+        <form action="buy-cadeau" method="post" style="display: contents;">
+            <foreach loop="$types as $type">
+                <if condition="($count = $nombres[$type['id']]) <= 0">
+                    <?php continue; ?>
+                </if>
+                <div class="col-md-6">
+                    <div class="divType">
+                        <h1 class="titleDiv">
+                            <?= $type['nom'] ?> : <?= $count ?>
+                            <button class="btn btn-primary">Suivant</button>
+                        </h1>
+                        <div class="listCadeau" data-cadeau="<?= $type['id'] ?>" data-needed="<?= $count ?>">
+                        </div>
                     </div>
                 </div>
-            </div>
-
-        </foreach>
-    </section>
+            </foreach>
+            <input type="submit" value="submit" style="display: none;" id="submit-btn">
+        </form>
+    </div>
     <script src="asset/js/cadeaux.js"></script>
     <script>
     const types = <?= json_encode($types) ?>;
@@ -45,24 +49,64 @@
     const solde = <?= $solde ?>;
     const count = <?= json_encode($nombres) ?>;
 
-    const randomPickers = [];
+    const randomPickers = {};
 
     for (const i in cadeaux)
-        randomPickers.push(new RandomPicker(cadeaux[i]));
+        randomPickers[i] = new RandomPicker(cadeaux[i]);
 
     const cadeauTypes = document.body.querySelectorAll('[data-cadeau]');
 
-    let i = 0;
     cadeauTypes.forEach(e => {
         let typeId = e.getAttribute('data-cadeau');
-        const el = randomPickers[i].getRandomElements();
-        
-        el.forEach(e => {
-            const content = 
+        let n = e.getAttribute('data-needed');
+        const el = randomPickers[typeId].getRandomElements(n);
+
+        let i = 0;
+        el.forEach(element => {
+            let div = templateCadeau(element, i);
+            e.appendChild(div);
+            i++;
         });
-        
-        i++;
     });
+
+    dummyImage();
+
+    document.body.addEventListener('click', event => {
+        if (event.target.matches('[data-change-cadeau]')) {
+            const but = event.target;
+            const butTypeId = but.getAttribute('data-type');
+            const index = but.getAttribute('data-index');
+
+            randomPickers[butTypeId].changeValue(index);
+
+            let cadeauType = document.body.querySelector(`[data-cadeau="${butTypeId}"]`);
+            Array.from(cadeauType.children).forEach(e => e.remove());
+
+            const el = randomPickers[butTypeId].getElement();
+
+            let i = 0;
+            el.forEach(element => {
+                let div = templateCadeau(element, i);
+                cadeauType.appendChild(div);
+                i++;
+            });
+
+            dummyImage();
+        }
+    });
+    </script>
+
+    <script>
+    document.getElementById('buy-btn').onclick = () => {
+        let sum = 0;
+        document.querySelectorAll('[data-cadeau-prix]').forEach(e => sum += Number(e.getAttribute(
+            'data-cadeau-prix')));
+        if (solde < sum) {
+            alert('Votre solde n\'est pas suffisant, ' + (sum - solde).toFixed(2) + ' $ manquante.');
+            return;
+        }
+        document.getElementById('submit-btn').click();
+    };
     </script>
 </body>
 

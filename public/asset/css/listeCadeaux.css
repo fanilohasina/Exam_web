@@ -84,7 +84,7 @@ h1.titleDiv {
 }
 
 .listCadeau {
-  height: 85%;
+  max-height: 65vh;
   overflow: scroll;
   overflow-x: hidden;
 }
@@ -109,7 +109,7 @@ h1.titleDiv {
 
 a.retour {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 1em;
+  left: 1em;
   z-index: 2000;
 }

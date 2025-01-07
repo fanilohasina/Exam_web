@@ -16,7 +16,7 @@
 <block body>
     <div class="containerFormulaire col-md-6 col-md-offset-3">
         <h1 style="color: white;">Generer des cadeaux</h1>
-        <form action="liste-cadeaux" method="get">
+        <form action="docadeau" method="get">
             <div class="form-group">
                 <label for="exampleInputEmail1">Nombres des garcons</label>
                 <input type="number" name="Garcon" class="form-control" id="exampleInputEmail1" placeholder="Garcons ..."

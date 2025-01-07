@@ -3,7 +3,7 @@
         <img src="" />
         <p>Home</p>
     </a>
-    <a href="generateur" class="navigationItem">
+    <a href="cadeau" class="navigationItem">
         <img src="asset/image/generateur.png" alt="">
         <p>Générateur de Cadeaux</p>
     </a>
